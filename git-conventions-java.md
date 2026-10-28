@@ -30,11 +30,15 @@ Mal:
 - `ahora sí funciona`, porque no dice qué se arregló.
 - `arreglé el kata`, porque está en español, en pasado y no dice que se arregló.
 - `subo todo`, porque mezcla muchos cambios en un solo commit.
-  
-  
+
+
 ## 2. Nombres de ramas
 
 Para entender mejor qué es una rama, me la imaginé como un camino con un desvío o sea la versión principal sigue igual, yo tomo el desvío para hacer mi trabajo y cuando termino, el desvío se vuelve a unir con el camino principal. Lo bueno es que puedo probar cosas sin miedo a romper nada.
+
+
+
+
 Yo pensaba que una rama era una copia de todo el proyecto, pero leyendo el libro oficial de Git me di cuenta de que no. En realidad es como un señalador que marca un commit y cada vez que hago un commit nuevo, el señalador se mueve solo. Por eso crear una rama es rápido porque no se copia nada.
 La rama principal casi siempre se llama `master` pero no es por algo especial, solo que Git la crea sola cuando empezás un proyecto.
 
