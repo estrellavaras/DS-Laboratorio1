@@ -31,17 +31,18 @@ Mal:
 - `arreglé el kata`, porque está en español, en pasado y no dice que se arregló.
 - `subo todo`, porque mezcla muchos cambios en un solo commit.
 
+Mientras resolvía los katas  escribí `reserved` en lugar de `reversed` en un mensaje de commit. Como todavía no había hecho `push`, lo pude corregir con `git commit --amend`que cambia el mensaje del último commit.
+
 
 ## 2. Nombres de ramas
 
 Para entender mejor qué es una rama, me la imaginé como un camino con un desvío o sea la versión principal sigue igual, yo tomo el desvío para hacer mi trabajo y cuando termino, el desvío se vuelve a unir con el camino principal. Lo bueno es que puedo probar cosas sin miedo a romper nada.
 
-
-
-
 Yo pensaba que una rama era una copia de todo el proyecto, pero leyendo el libro oficial de Git me di cuenta de que no. En realidad es como un señalador que marca un commit y cada vez que hago un commit nuevo, el señalador se mueve solo. Por eso crear una rama es rápido porque no se copia nada.
-La rama principal casi siempre se llama `master` pero no es por algo especial, solo que Git la crea sola cuando empezás un proyecto.
 
+La rama principal se llama `master` o `main`es la que Git crea sola cuando empezás un proyecto. Antes se usaba más `master`, y ahora GitHub usa `main`, que es la que configuré yo.
+
+Cuando uso `git log --oneline`, aparece `HEAD` que marca en qué rama y en qué commit estoy trabajando en ese momento. Es como el punto azul de Google Maps, que muestra donde estas en ese momento.
 ### Reglas
 
 En clase vimos estas reglas:
@@ -57,8 +58,8 @@ Investigando, encontré otras reglas que también se usan:
 - No usar símbolos raros como `!`, `?` o `#`, porque pueden dar problemas en Git.
 - Poner el nombre de usuario al principio sirve para saber quién trabaja en cada rama. Por eso siempre usamos `usuario/`.
 - En muchos equipos también ponen una palabra al principio que dice qué tipo de trabajo es. Por ejemplo, `feature/` (función nueva) se usa cuando se agrega algo, como `feature/login` para hacer un inicio de sesión, y `bugfix/` (arreglo de error) se usa cuando se corrige algo que no funciona.
-  
-  Para crear una rama y entrar en ella se usa este comando:
+
+Para crear una rama y entrar en ella se usa este comando:
 
   `git switch -c estrellavaras/Kata-reversed-strings`
   
@@ -68,6 +69,7 @@ Bien:
 
 - `estrellavaras/Kata-reversed-strings`
 - `estrellavaras/Kata-simple-card-game`
+- `estrellavaras/Fix-document-format` (la usé para corregir este documento)
 
 Mal (nombres que yo misma podría haber usado antes de aprender las reglas):
 
